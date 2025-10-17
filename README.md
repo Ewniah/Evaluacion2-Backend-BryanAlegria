@@ -1,8 +1,8 @@
 ### Descripción del Proyecto
 
-Este proyecto es un sitio E-commerce funcional construido con Django. [cite_start]El sitio, llamado "Aiwbrify", es una tienda de vinilos que permite a los usuarios visualizar productos, navegar por categorías de artistas y ver los detalles de cada producto[cite: 14, 15].
+Este proyecto es un sitio E-commerce funcional construido con Django. El sitio, llamado "Aiwbrify", es una tienda de vinilos que permite a los usuarios visualizar productos, navegar por categorías de artistas y ver los detalles de cada producto.
 
-[cite_start]El panel de administración de Django se utiliza para toda la gestión de productos (CRUD).
+El panel de administración de Django se utiliza para toda la gestión de productos (CRUD).
 
 ---
 
@@ -60,17 +60,17 @@ El sitio estará disponible en `http://127.0.0.1:8000/`.
 - **Página de Inicio:** `http://127.0.0.1:8000/`
 - **Panel de Administración:** `http://127.0.0.1:8000/admin/`
 
-[cite_start]Las credenciales para acceder al panel de administración:
+Las credenciales para acceder al panel de administración:
 
-- [cite_start]**Usuario:** `ES02`
-- [cite_start]**Contraseña:** `pbe-es-02`
+- **Usuario:** `ES02`
+- **Contraseña:** `pbe-es-02`
 
 ---
 
 ### Requerimientos Funcionales Implementados
 
-- [cite_start]**Estructura de Datos:** El modelo `Producto` incluye nombre, precio, stock, descripción e imagen.
-- [cite_start]**Página Principal y Navegación:** El sitio muestra todos los productos y permite la navegación por categorías a través de un menú.
-- [cite_start]**Páginas por Categoría:** Al seleccionar un artista, se muestran únicamente los productos de esa categoría.
-- [cite_start]**Página de Detalle:** Cada producto tiene una página de detalle individual con toda su información.
-- [cite_start]**Gestión desde el Administrador:** Se permite insertar, modificar o eliminar productos desde el panel de Django. [cite_start]Los modelos se visualizan en columnas por sus atributos.
+- **Estructura de Datos:** El modelo `Producto` incluye nombre, precio, stock, descripción e imagen.
+- **Página Principal y Navegación:** El sitio muestra todos los productos y permite la navegación por categorías a través de un menú.
+- **Páginas por Categoría:** Al seleccionar un artista, se muestran únicamente los productos de esa categoría.
+- **Página de Detalle:** Cada producto tiene una página de detalle individual con toda su información.
+- **Gestión desde el Administrador:** Se permite insertar, modificar o eliminar productos desde el panel de Django. Los modelos se visualizan en columnas por sus atributos.
