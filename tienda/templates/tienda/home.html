@@ -1,0 +1,18 @@
+{% extends 'tienda/base.html' %} 
+
+{% block content %}
+    <h1 class="page-title">Todos los Productos</h1>
+    <div class="row mt-4">
+        {% for producto in productos %}
+        <div class="col-md-4 mb-5 text-center">
+            <a href="{% url 'detalle_producto' producto.id %}" style="text-decoration: none; color: inherit;">
+                {% if producto.imagen %}
+                    <img src="{{ producto.imagen.url }}" class="img-fluid mb-3" alt="{{ producto.nombre }}">
+                {% endif %}
+                <h6>{{ producto.nombre }}</h6>
+                <p>${{ producto.precio }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

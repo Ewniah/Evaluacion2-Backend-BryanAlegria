@@ -1,0 +1,25 @@
+{% extends 'tienda/base.html' %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="page-title">Destacados</h1>
+</div>
+
+<div id="vinilosCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner py-5">
+        {% for producto in productos %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <div class="d-flex justify-content-center">
+                <a href="{% url 'detalle_producto' producto.id %}">
+                    <img src="{{ producto.imagen.url }}" class="d-block" style="max-height: 400px; width: auto;" alt="{{ producto.nombre }}">
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="{% url 'home' %}" class="btn btn-dark btn-lg">Ver todo el catálogo</a>
+</div>
+{% endblock %}
